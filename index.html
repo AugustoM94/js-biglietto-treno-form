@@ -1,51 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
     <title>Calcolo del prezzo del biglietto del treno</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
+
 <body>
-<div class="container p-3">
+    <div class="container p-3">
 
-   <h1 class="text-center text-uppercase p-3">Boolean-Train</h1>
-  </div>
-   <div class="container">
-    <div class="row">
-        <h3>Calcola il prezzo del tuo biglietto </h3>
-      <div class="form-group col-md-6">
-        <label for="Nome">Nome e Cognome</label>
-        <input type="text" class="form-control" id="nome">
-      </div>
-      <div class="form-group col-md">
-        <label for="km">Km da percorrere:</label>
-        <input type="text" class="form-control" id="km">
-      </div>
-      <div class="form-group col-md">
-        <label for="age">Indicare èta:</label>
-        <input type="text" class="form-control" id="age">
-      </div>
+        <h1 class="text-center text-uppercase p-3">Boolean-Train</h1>
     </div>
-    <div class="container p-3 text-center">
-        <button type="button" class="btn btn-success">Primary</button>
-        <button type="button" class="btn btn-danger">Danger</button>
-      </div>
-</div>
-<div class="container output-form d-none">
-    <h3 class="text-center">Il tuo biglietto</h3>
-<div class="row">
-<div class="col-3 outputName">
-
-</div>
-<div class="col-2"></div>
-<div class="col-2"></div>
-<div class="col-2"></div>
-<div class="col-3 outputCosto"></div>
-</div>
-</div>
-   
+    <div class="container">
+        <div class="row">
+            <h3>Calcola il prezzo del tuo biglietto </h3>
+            <div class="form-group col-md-6">
+                <label for="nome">Nome e Cognome</label>
+                <input type="text" class="form-control" id="nome">
+            </div>
+            <div class="form-group col-md">
+                <label for="km">Km da percorrere:</label>
+                <input type="text" class="form-control" id="km">
+            </div>
+            <div class="form-group col-md">
+                <label for="age">Indicare età:</label>
+                <input type="text" class="form-control" id="age">
+            </div>
+        </div>
+        <div class="container p-3 text-center">
+            <button type="button" class="btn btn-success" >Calcola</button>
+            <button type="button" class="btn btn-danger">Svuota</button>
+        </div>
+    </div>
+    <div class="container d-none" id="Iltuobiglietto">
+        <h3 class="text-center p-2">Il tuo biglietto</h3>
+        <div class="row">
+            <div class="col-3 " >
+               <h5>Nome Passegero</h5> 
+               <p id="Passeggero"></p>
+            </div>
+            <div class="col-2">
+                <h5>Offerta</h5>
+                <p>Biglietto Standard</p>
+            </div>
+            <div class="col-2">
+                <h5>Carrozza</h5>
+                <p id="casuale"></p>
+            </div>
+            <div class="col-2">
+                <h5>Codice CP</h5>
+                <p id="random"></p>
+            </div>
+            <div class="col-3 outputCosto">
+              <h6>Costo Biglietto</h6>
+              <p id="Cbiglietto"></p>
+            </div>
+        </div>
+    </div>
     <script src="/js/script.js"></script>
 </body>
+
 </html>
