@@ -33,7 +33,7 @@ button.addEventListener('click',
          Prezzo_finale = Prezzo_finale.toFixed(2);
 
         document.getElementById('Passeggero').innerHTML = `   ${passeggero}       `
-        document.getElementById('Cbiglietto').innerHTML = `   ${Prezzo_finale}       `
+        document.getElementById('Cbiglietto').innerHTML = `   ${Prezzo_finale} €      `
 
 
       
