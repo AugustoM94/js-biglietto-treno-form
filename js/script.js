@@ -32,7 +32,11 @@ button.addEventListener('click',
          Prezzo_biglietto = Prezzo_biglietto.toFixed(2)
          Prezzo_finale = Prezzo_finale.toFixed(2);
 
-        document.getElementById('Passeggero').innerHTML = `   ${passeggero}       `
+        document.getElementById('Passeggero').innerHTML = `  
+        ${passeggero}      
+  
+        
+        `
         document.getElementById('Cbiglietto').innerHTML = `   ${Prezzo_finale} €      `
 
 
@@ -60,6 +64,6 @@ button.addEventListener('click',
     })
     button.addEventListener('click',
     function casuale() {
-        num = Math.round(Math.random() * 12);
+        num = Math.round(Math.random() * 10000);
         document.getElementById("random").innerHTML = num;
     })
